@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>10. Understanding Function Versus Global Scope</title>
+	<script type="text/javascript">
+	
+	//scope -> the availability of a certain variable in your code.
+	//global variables -> accesable from anywhere in the code.
+	//function variables -> accesible only in Native block of code.
+	
+	//debunk the scope notion in javascript
+/*
+	if (true) {
+		var x = 5;
+	}
+	alert(x);
+
+
+	//starting to utilize global variables
+
+	myScope = "global";
+
+	(function() {
+		if (true)
+		{
+		var myScope = "function";
+		}
+	
+	//myScope = "I set this inside the function";
+	
+	alert('inside the function, the scope is: ' + myScope);
+	})();
+	
+	//alert('outside the function, the scope is: ' + myScope);
+*/
+
+
+	//all global variables are stored in the DOM so we can do stuff like this ->
+
+	alert('window.myScope: ' + window.myScope);	
+	
+
+
+
+	</script>
+</head>
+<body>
+	<h1>Understanding Function Versus Global Scope</h1>
+</body>
+</html>

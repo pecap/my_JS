@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>6. Conditional Logic in JavaScript</title>
+	<script type="text/javascript">
+
+		var someValue = 24;
+		var otherValue = 23;
+		/*
+		if(someValue > 30) {
+			alert("first case");
+
+		}
+
+		else if (someValue === 30) {
+			alert("second case");
+
+		}
+
+		//once a condition is met, it will not carry own to check the rest of the conditional logic
+		//if we would change the first elseif to condition someValue === 30, then itll return false and move on to the next condition		
+
+		else if (someValue === 25) {
+			alert("third case");
+		
+		}
+
+		else {
+		
+			alert("fourth case");
+
+		}
+		*/
+
+		//check multiple conditions using &&
+		/*
+		if (someValue > 20 && otherValue > 20) {
+			alert("fifth case");
+
+		}
+		*/		
+
+		//check one of several conditions using the "or" operator ||
+		/*
+		if (someValue ===24 || otherValue === 24) {
+			alert("sixth case");
+
+
+		}
+		*/
+
+		//does not equal is checked using !==
+		/*
+		if (someValue !== 24) {
+			alert("seventh case");
+
+		}
+
+		else {
+			alert("well its not 42");
+
+		}
+		*/
+		//the ! operator put infront means "not". !someValue = "not someValue"
+		/*
+		if (!someValue) {
+			alert("eigth case");
+
+		}
+		*/
+		
+		//the "conditional operator" evaluates an expression and itll return 
+		/*
+
+		var myResult = "";
+		myResult = (someValue === 24) ? "equal" : "not equal";
+		alert(myResult);
+		*/
+		//falesy truthy - 
+		/*
+		var userName = "Rimmer";
+		switch (userName)
+		{
+			case "Lister":
+				document.write("care for a good curry?");
+				break;
+			case "Rimmer":
+				document.write("Welcome back, smeg head");
+				break;
+			default:
+				document.write("Are you an emohawk?");
+				break;
+		}
+		*/
+
+		var rightNow = new Date ();
+		var currentHour = rightNow.getHours();
+		switch(true)
+		{
+			case (currentHour > 8 && currentHour < 12):
+				document.write("Morning, sunshine!");
+				break;
+			case (currentHour === 12):
+				document.write("Lunch time!");
+				break;
+			case (currentHour > 12 && currentHour < 18):
+				document.write("Fight the urge to siesta!");
+				break;
+			default:
+				document.write("Carefull Sparty, they'll think you're a hard worker!");
+				break;
+		}		
+
+
+		
+
+	</script>
+</head>
+<body>
+	<h1>6. Conditional Logic in JavaScript</h1>
+</body>
+</html>

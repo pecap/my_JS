@@ -1,0 +1,11 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration: overline;
+}
